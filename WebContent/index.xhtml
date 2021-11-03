@@ -58,7 +58,7 @@
 				<tr>
 					<td>Curso</td>
 					<td>
-						<h:selectOneMenu value="#inscricaoMBean.inscricao.curso}">
+						<h:selectOneMenu value="#{inscricaoMBean.inscricao.curso}" required="true" requiredMessage="Curso: Campo obrigatório.">
 							<f:selectItem itemValue="Introdução à língua inglesa" itemLabel="Introdução à língua inglesa"/>
 							<f:selectItem itemValue="Escrita criativa" itemLabel="Escrita criativa"/>
 							<f:selectItem itemValue="Pintura em tela" itemLabel="Pintura em tela"/>

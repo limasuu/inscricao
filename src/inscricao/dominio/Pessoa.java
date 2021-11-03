@@ -9,7 +9,7 @@ public class Pessoa {
 	private Date dataNascimento;
 	private String endereco;
 	private String email;
-	private boolean especial;
+	private String especial;
 	
 	public Pessoa() {  }
 	
@@ -53,11 +53,17 @@ public class Pessoa {
 		this.email = email;
 	}
 	
-	public boolean getEspecial() {
+	public String getEspecial() {
+		
 		return especial;
 	}
 	
-	public void setEspecial(boolean especial) {
-		this.especial = especial;
+	public void setEspecial(String especial) {
+		
+		if(especial.equals("true"))
+			this.especial= "sim";
+		
+		else
+			this.especial= "não";
 	}	
 }

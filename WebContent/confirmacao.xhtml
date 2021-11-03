@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+	<h:head>
+		<title>Confirmação</title>
+	</h:head>
+	<h:body>
+	
+		<h2>Inscrição realizada com sucesso!</h2>
+		
+		<table>
+			
+			<tr>
+					<td>Nome completo</td>
+					<td>
+						<h:outputText value="#{inscricaoMBean.inscricao.pessoa.nome}"/>
+					</td>
+				</tr>	
+				
+				<tr>
+					<td>Gênero</td>
+					<td>
+						<h:outputText value="#{inscricaoMBean.inscricao.pessoa.genero}"/>
+					</td>
+				</tr>			
+							
+				<tr>
+					<td>Data de nascimento</td>
+					<td>
+						<h:outputText value="#{inscricaoMBean.inscricao.pessoa.dataNascimento}">
+							<f:convertDateTime pattern="dd/MM/yyyy"/>
+						</h:outputText>
+					</td>
+				</tr>
+								
+				<tr>
+					<td>Endereço</td>
+					<td>
+						<h:outputText value="#{inscricaoMBean.inscricao.pessoa.endereco}"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>E-mail</td>
+					<td>
+						<h:outputText value="#{inscricaoMBean.inscricao.pessoa.email}"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Curso</td>
+					<td>
+						<h:outputText value="#{inscricaoMBean.inscricao.curso}"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Unidade</td>
+					<td>
+						<h:outputText value="#{inscricaoMBean.inscricao.unidade}"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Necessidades especiais</td>
+					<td>
+						<h:outputText value="#{inscricaoMBean.inscricao.pessoa.especial}"/>
+					</td>
+				</tr>
+		
+		</table>
+		
+		<p>Acompanhe nossa página para novas informações.</p>		
+	
+	</h:body>
+</html>
